@@ -39,13 +39,11 @@ body {
   padding: 40px;
 }
 
+
 .game-link {
   text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 100px;
+  display: inline-block;
+  margin-right: 30px;
   text-align: center;
 }
 
@@ -56,4 +54,6 @@ body {
 
 .game-name {
   color: #23866F;
+  display: block;
+  margin-top: 10px;
 }
