@@ -40,11 +40,15 @@ body {
 }
 
 
-.game-link {
-  text-decoration: none;
+.game-box {
   display: inline-block;
   margin-right: 30px;
   text-align: center;
+  cursor: pointer;
+}
+
+.game-link {
+  text-decoration: none;
 }
 
 .game-icon {
@@ -56,4 +60,8 @@ body {
   color: #23866F;
   display: block;
   margin-top: 10px;
+}
+
+.back-link {
+  color: #E7ECE0;
 }
