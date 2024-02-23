@@ -1,0 +1,10 @@
+.mg-main {
+  background-color: #90CFB9;
+  padding: 30px;
+}
+
+.card {
+  width: 25%;
+  max-width: 150px;
+  padding: 10px;
+}
