@@ -1,0 +1,52 @@
+.rps-main {
+  background-color: #90CFB9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 40px;
+  margin: 30px;
+  max-height: 80%;
+}
+
+.results {
+  text-align: center;
+}
+
+.rps-btns {
+  text-align: center;
+}
+
+.rps-btn {
+  background: none;
+  border: none;
+  font-size: 3em;
+  padding: 30px;
+}
+
+.result-message {
+  color: #474747;
+}
+
+a {
+  color: #E7ECE0;
+}
+
+.red-message {
+  color: #a70808;
+}
+
+.green-message {
+  color: #23866F;
+}
+
+
+
+
+@media (max-width: 500px) {
+  .rps-btn {
+    font-size: 2em;
+    padding: 10px;
+  }
+}

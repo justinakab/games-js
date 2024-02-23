@@ -42,7 +42,20 @@ possibleChoices.forEach((button) =>
 
       resultDisplay.innerHTML = result;
     };
+    const decideColor = () => {
+      if (result === 'You won!') {
+        resultDisplay.classList.add('green-message');
+        resultDisplay.classList.remove('red-message');
+      } else if (result === 'You lost!') {
+        resultDisplay.classList.remove('green-message');
+        resultDisplay.classList.add('red-message');
+      } else {
+        resultDisplay.classList.remove('green-message');
+        resultDisplay.classList.remove('red-message');
+      }
+    };
 
     getResult();
+    decideColor();
   }),
 );
