@@ -61,6 +61,7 @@ resultDisplay.innerHTML = '0';
 let cardsChosen = [];
 let cardChosenIds = [];
 const cardsWon = [];
+let messageDisplay = document.getElementById('message');
 
 const createBoard = () => {
   cardArray.forEach((object, index) => {
@@ -75,6 +76,8 @@ const createBoard = () => {
 };
 
 createBoard();
+
+// flip card
 
 function flipCard() {
   const cardId = this.getAttribute('data-id');
@@ -95,15 +98,17 @@ function flipCard() {
   }
 }
 
+// checking the match
+
 function checkMatch() {
   console.log('check');
 
   const cards = document.querySelectorAll('img');
   const optionOneId = cardChosenIds[0];
   const optionTwoId = cardChosenIds[1];
-  let messageDisplay = document.getElementById('message');
   let message = '';
 
+  // if the same card is clicked
   if (optionOneId === optionTwoId) {
     message = 'You have clicked to same image';
 
@@ -113,12 +118,15 @@ function checkMatch() {
     }, 1000);
   }
 
+  // if there's a match
+
   if (cardsChosen[0] === cardsChosen[1]) {
     message = "It's a match!";
     messageDisplay.innerHTML = message;
     setTimeout(() => {
       messageDisplay.innerHTML = '';
     }, 1000);
+
     cards[optionOneId].setAttribute('src', 'img/white.png');
     cards[optionTwoId].setAttribute('src', 'img/white.png');
     cards[optionOneId].removeEventListener('click', flipCard);
@@ -135,10 +143,4 @@ function checkMatch() {
 
   cardsChosen = [];
   cardChosenIds = [];
-
-  if (cardsWon.length === cardArray.length / 2) {
-    setTimeout(() => {
-      alert('You won!');
-    }, 500);
-  }
 }

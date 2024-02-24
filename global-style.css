@@ -65,3 +65,17 @@ body {
 .back-link {
   color: #E7ECE0;
 }
+
+
+.title,
+.description {
+  color: #E7ECE0;
+}
+
+.description {
+  margin: 0 0 30px 0;
+}
+
+button {
+  cursor: pointer;
+}
