@@ -11,13 +11,13 @@ In this repository, I made sure to practice many JavaScript fundamentals such as
 Rock Paper Scissors</li>
   <li>
 Memory Game</li>
+</li>
+ <li>currently working on: Wordle</li>
 
 
 <h2>Technologies Used:</h2>
 <ul>
   <li>HTML, CSS, JavaScript
-</li>
- <li>currently working on: Wordle</li>
 </ul>
 
 
