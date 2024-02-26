@@ -111,16 +111,16 @@ function checkMatch() {
   // if the same card is clicked
   if (optionOneId === optionTwoId) {
     message = 'You have clicked to same image';
-
     messageDisplay.innerHTML = message;
     setTimeout(() => {
       messageDisplay.innerHTML = '';
     }, 1000);
+    cards[optionOneId].setAttribute('src', 'img/back.png');
+    cards[optionTwoId].setAttribute('src', 'img/back.png');
   }
 
   // if there's a match
-
-  if (cardsChosen[0] === cardsChosen[1]) {
+  else if (cardsChosen[0] === cardsChosen[1]) {
     message = "It's a match!";
     messageDisplay.innerHTML = message;
     setTimeout(() => {
@@ -143,4 +143,16 @@ function checkMatch() {
 
   cardsChosen = [];
   cardChosenIds = [];
+
+  // popup
+
+  if (cardsWon.length === cardArray.length / 2) {
+    const popup = document.querySelector('.popup');
+
+    function openPopup() {
+      popup.classList.remove('popup-hidden');
+    }
+
+    openPopup();
+  }
 }

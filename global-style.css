@@ -72,6 +72,10 @@ body {
   color: #E7ECE0;
 }
 
+.title {
+  margin-top: 15px;
+}
+
 .description {
   margin: 0 0 30px 0;
 }
