@@ -152,7 +152,6 @@ function checkMatch() {
   cardChosenIds = [];
 
   isChecking = false;
-
   // popup
 
   if (cardsWon.length === cardArray.length / 2) {
