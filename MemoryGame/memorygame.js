@@ -77,9 +77,15 @@ const createBoard = () => {
 
 createBoard();
 
+let isChecking = false;
+
 // flip card
 
 function flipCard() {
+  if (isChecking) {
+    return;
+  }
+
   const cardId = this.getAttribute('data-id');
   console.log('clicked', cardId);
 
@@ -94,6 +100,7 @@ function flipCard() {
   console.log(cardsChosen);
 
   if (cardsChosen.length === 2) {
+    isChecking = true;
     setTimeout(checkMatch, 500);
   }
 }
@@ -143,6 +150,8 @@ function checkMatch() {
 
   cardsChosen = [];
   cardChosenIds = [];
+
+  isChecking = false;
 
   // popup
 

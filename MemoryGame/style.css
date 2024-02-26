@@ -8,6 +8,7 @@
 .card {
   max-width: 150px;
   padding: 10px;
+  cursor: pointer;
 }
 
 #grid {
