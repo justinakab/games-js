@@ -1,13 +1,4 @@
-// dictionary
-const dictionary = [
-  'earth',
-  'plane',
-  'cable',
-  'audio',
-  'house',
-  'mouse',
-  'track',
-];
+import { dictionary } from './dictionary/dictionary.js';
 
 // state of the game
 const state = {
