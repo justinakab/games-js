@@ -11,14 +11,15 @@ In this repository, I made sure to practice many JavaScript fundamentals such as
 Rock Paper Scissors</li>
 <li>
 Memory Game</li>
-<li>currently working on: Wordle</li>
+<li>Wordle</li>
+<li>currently working on: Space Invaders</li>
+
 </ul>
 
 <h2>Technologies Used:</h2>
 <ul>
 <li>HTML, CSS, JavaScript</li>
 </ul>
-
 
 <h2>Getting Started:</h2>
 <p>To begin using games-js, follow these steps:</p>
@@ -33,8 +34,8 @@ Memory Game</li>
 </li>
 </ol>
 
-
 > [!NOTE]
+>
 > <ul>
 > <li>Work-in–Progress.</p>
-></li>
+> </li>
