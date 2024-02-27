@@ -92,28 +92,36 @@ function isWordValid(word) {
 
 function revealWord(guess) {
   const row = state.currentRow;
+  const animationDuration = 500; // ms
 
   for (let i = 0; i < 5; i++) {
     const box = document.getElementById(`box${row}${i}`);
     const letter = box.textContent;
 
-    if (letter === state.secret[i]) {
-      box.classList.add('right');
-    } else if (state.secret.includes(letter)) {
-      box.classList.add('wrong');
-    } else {
-      box.classList.add('empty');
-    }
+    setTimeout(() => {
+      if (letter === state.secret[i]) {
+        box.classList.add('right');
+      } else if (state.secret.includes(letter)) {
+        box.classList.add('wrong');
+      } else {
+        box.classList.add('empty');
+      }
+    }, ((i + 1) * animationDuration) / 2);
+
+    box.classList.add('animated');
+    box.style.animationDelay = `${(i * animationDuration) / 2}ms`;
   }
 
   const isWinner = state.secret === guess;
   const isGameOver = state.currentRow === 5;
 
-  if (isWinner) {
-    alert('Congratulations!');
-  } else if (isGameOver) {
-    alert(`Better luck next time! The word was ${state.secret}.`);
-  }
+  setTimeout(() => {
+    if (isWinner) {
+      alert('Congratulations!');
+    } else if (isGameOver) {
+      alert(`Better luck next time! The word was ${state.secret}.`);
+    }
+  }, 3 * animationDuration);
 }
 
 function isLetter(key) {
