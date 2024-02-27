@@ -108,7 +108,17 @@ function revealWord(guess) {
 
   setTimeout(() => {
     if (isWinner) {
-      alert('Congratulations!');
+      const popup = document.querySelector('.popup');
+
+      function openPopup() {
+        const background = document.getElementById('bg–darker');
+
+        popup.classList.remove('popup-hidden');
+
+        background.classList.add('popup-background');
+      }
+
+      openPopup();
     } else if (isGameOver) {
       alert(`Better luck next time! The word was ${state.secret}.`);
     }

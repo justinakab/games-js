@@ -158,7 +158,11 @@ function checkMatch() {
     const popup = document.querySelector('.popup');
 
     function openPopup() {
+      const background = document.getElementById('bg–darker');
+
       popup.classList.remove('popup-hidden');
+
+      background.classList.add('popup-background');
     }
 
     openPopup();

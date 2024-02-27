@@ -1,3 +1,7 @@
+.background {
+  position: relative;
+}
+
 .mg-main {
   background-color: #90CFB9;
   padding: 30px;
@@ -16,36 +20,4 @@
   justify-items: center;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.popup {
-  position: absolute;
-  background-color: white;
-  width: 50%;
-  height: 40%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 40px;
-}
-
-button {
-  padding: 15px 60px;
-  background-color: #90CFB9;
-  color: white;
-  width: 300px;
-  border-radius: 40px;
-  border: none;
-  cursor: pointer;
-
-  margin-top: 15px;
-}
-
-button:hover {
-  background-color: #23866F;
-}
-
-.popup-hidden {
-  display: none;
 }

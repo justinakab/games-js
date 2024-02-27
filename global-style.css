@@ -83,3 +83,47 @@ body {
 button {
   cursor: pointer;
 }
+
+.popup {
+  position: absolute;
+  background-color: white;
+  width: 50%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border: 1px solid #23866F;
+  z-index: 2;
+}
+
+.b1 {
+  padding: 15px 60px;
+  background-color: #90CFB9;
+  color: white;
+  width: 300px;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 15px;
+}
+
+.b1:hover {
+  background-color: #23866F;
+}
+
+.popup-hidden {
+  display: none;
+}
+
+.popup-background {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
