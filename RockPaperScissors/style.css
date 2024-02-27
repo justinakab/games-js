@@ -3,10 +3,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   padding: 30px;
   border-radius: 40px;
   max-height: 80%;
+}
+
+h2 {
+  font-weight: 600;
+
 }
 
 .results {
@@ -26,6 +30,8 @@
 
 .result-message {
   color: #474747;
+  font-weight: 800;
+
 }
 
 .red-message {

@@ -55,6 +55,8 @@ function registerKeyboardEvents() {
           state.currentCol = 0;
         } else {
           alert('Not a valid word.');
+          clearRow();
+          state.currentCol = 0;
         }
       }
     }
@@ -72,6 +74,13 @@ function registerKeyboardEvents() {
 }
 
 // mini functions needed above
+
+function clearRow() {
+  for (let i = 0; i < state.grid[state.currentRow].length; i++) {
+    state.grid[state.currentRow][i] = '';
+  }
+  updateGrid();
+}
 
 function getCurrentWord() {
   return state.grid[state.currentRow].reduce((prev, curr) => prev + curr);

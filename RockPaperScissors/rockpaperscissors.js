@@ -10,6 +10,8 @@ let result;
 
 possibleChoices.forEach((button) =>
   button.addEventListener('click', (e) => {
+    possibleChoices.forEach((btn) => (btn.disabled = true));
+
     userChoice = e.target.textContent;
     userChoiceDisplay.innerHTML = userChoice;
 
@@ -18,10 +20,11 @@ possibleChoices.forEach((button) =>
       console.log(randomNumber);
 
       computerChoice = choices[randomNumber];
+
       computerChoiceDisplay.innerHTML = computerChoice;
     };
 
-    generateComputerChoice();
+    setTimeout(generateComputerChoice, 1000);
 
     const getResult = () => {
       if (computerChoice === userChoice) {
@@ -55,7 +58,20 @@ possibleChoices.forEach((button) =>
       }
     };
 
-    getResult();
-    decideColor();
+    const clear = () => {
+      computerChoice = '';
+      result = '';
+      userChoice = '';
+
+      computerChoiceDisplay.textContent = computerChoice;
+      resultDisplay.textContent = result;
+      userChoiceDisplay.textContent = userChoice;
+
+      possibleChoices.forEach((btn) => (btn.disabled = false));
+    };
+
+    setTimeout(getResult, 2000);
+    setTimeout(decideColor, 2000);
+    setTimeout(clear, 3000);
   }),
 );
