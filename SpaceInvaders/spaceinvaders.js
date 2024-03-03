@@ -101,6 +101,17 @@ function moveInvaders() {
   if (alienInvaders.length === aliensRemoved.length) {
     resultDisplay.textContent = 'YOU WIN!';
     clearInterval(invadersId);
+    const popup = document.querySelector('.popup');
+
+    function openPopup() {
+      const background = document.getElementById('bg–darker');
+
+      popup.classList.remove('popup-hidden');
+
+      background.classList.add('popup-background');
+    }
+
+    setTimeout(openPopup, 1000);
   }
 }
 
