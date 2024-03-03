@@ -12,7 +12,8 @@ Rock Paper Scissors</li>
 <li>
 Memory Game</li>
 <li>Wordle</li>
-<li>currently working on: Space Invaders</li>
+<li>Space Invaders</li>
+<li>currently working on: Minesweeper</li>
 
 </ul>
 
