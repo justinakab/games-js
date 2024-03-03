@@ -127,3 +127,26 @@ button {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+@media (max-width: 500px) {
+  .game-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-box {
+    padding: 20px 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1300px) {
+
+  .container,
+  .top {
+    width: 60%;
+  }
+
+
+}
