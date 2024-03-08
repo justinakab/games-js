@@ -20,7 +20,7 @@ body {
 
 .background {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,6 +131,10 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.title {
+  margin-top: 5vh;
+}
+
 @media (max-width: 500px) {
   .game-menu {
     display: flex;
@@ -142,6 +146,23 @@ button {
     padding: 20px 0;
     margin: 0;
   }
+
+  .description,
+  title {
+    padding: 0 10vw;
+  }
+
+  .title {
+    margin-top: 10vh;
+  }
+
+  .back-link {
+    padding-bottom: 10vh;
+  }
+
+  .game-menu {
+    margin-bottom: 10vh;
+  }
 }
 
 @media (min-width: 1300px) {
@@ -150,6 +171,8 @@ button {
   .top {
     width: 60%;
   }
+
+
 
 
 }

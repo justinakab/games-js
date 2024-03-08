@@ -20,6 +20,12 @@
   text-align: center;
 }
 
+.results-tag {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+
 .grid div {
   width: 20px;
   height: 20px;
@@ -43,4 +49,11 @@
   background-color: red;
   border-radius: 10px;
 
+}
+
+@media (max-width: 500px) {
+  .si-main {
+    padding: 30px 10px;
+    width: 93vw;
+  }
 }
