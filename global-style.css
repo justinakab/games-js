@@ -163,6 +163,14 @@ button {
   .game-menu {
     margin-bottom: 10vh;
   }
+
+  .popup {
+
+    width: 90%;
+    height: 50%;
+
+  }
+
 }
 
 @media (min-width: 1300px) {
