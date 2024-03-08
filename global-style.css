@@ -164,13 +164,22 @@ button {
     margin-bottom: 10vh;
   }
 
-  .popup {
-
-    width: 90vw;
-    height: 60vh;
-
+  .b1 {
+    width: 200px;
+    padding: 15px 30px;
   }
 
+  .popup {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .popup {
+    width: 90vw;
+    height: 60vh;
+  }
 }
 
 @media (min-width: 1300px) {
