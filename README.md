@@ -13,7 +13,7 @@ Rock Paper Scissors</li>
 Memory Game</li>
 <li>Wordle</li>
 <li>Space Invaders</li>
-<li>currently working on: Minesweeper</li>
+<li>currently working on: Bombsweeper</li>
 
 </ul>
 
