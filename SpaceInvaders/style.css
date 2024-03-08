@@ -51,9 +51,27 @@
 
 }
 
+.arrows {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.arrows img {
+  width: 5vw;
+  cursor: pointer;
+
+}
+
 @media (max-width: 500px) {
   .si-main {
     padding: 30px 10px;
     width: 93vw;
+  }
+
+  .arrows img {
+    width: 20%;
+
   }
 }

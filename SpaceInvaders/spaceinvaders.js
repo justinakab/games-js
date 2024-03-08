@@ -43,10 +43,10 @@ function remove() {
 }
 
 // function for moving shooters
-function moveShooter(e) {
+function moveShooterByKey(key) {
   squares[currentShooterIndex].classList.remove('shooter');
 
-  switch (e.key) {
+  switch (key) {
     case 'ArrowLeft':
       if (currentShooterIndex % width !== 0) {
         currentShooterIndex -= 1;
@@ -62,8 +62,6 @@ function moveShooter(e) {
 
   squares[currentShooterIndex].classList.add('shooter');
 }
-
-document.addEventListener('keydown', moveShooter);
 
 function moveInvaders() {
   const leftEdge = alienInvaders[0] % width === 0;
@@ -118,7 +116,7 @@ function moveInvaders() {
 invadersId = setInterval(moveInvaders, 600);
 
 // shooting invaders
-function shoot(e) {
+function shootByKey(key) {
   let laserId;
   let currentLaserIndex = currentShooterIndex;
 
@@ -153,9 +151,20 @@ function shoot(e) {
     }
   }
 
-  if (e.key === 'ArrowUp') {
+  if (key === 'ArrowUp') {
     laserId = setInterval(moveLaser, 100);
   }
 }
 
-document.addEventListener('keydown', shoot);
+document.addEventListener('keydown', (e) => {
+  moveShooterByKey(e.key);
+  shootByKey(e.key);
+});
+
+const leftArrow = document.getElementById('left-arrow');
+const upperArrow = document.getElementById('upper-arrow');
+const rightArrow = document.getElementById('right-arrow');
+
+leftArrow.addEventListener('click', () => moveShooterByKey('ArrowLeft'));
+upperArrow.addEventListener('click', () => shootByKey('ArrowUp'));
+rightArrow.addEventListener('click', () => moveShooterByKey('ArrowRight'));
