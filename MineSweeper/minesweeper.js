@@ -238,6 +238,17 @@ document.addEventListener('DOMContentLoaded', () => {
       if (matches === bombAmount) {
         result.innerHTML = 'YOU WIN!';
         isGameOver = true;
+        const popup = document.querySelector('.popup');
+
+        function openPopup() {
+          const background = document.getElementById('bg–darker');
+
+          popup.classList.remove('popup-hidden');
+
+          background.classList.add('popup-background');
+        }
+
+        setTimeout(openPopup, 1000);
       }
     }
     console.log(matches);
