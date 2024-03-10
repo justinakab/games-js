@@ -8,7 +8,7 @@
   width: 400px;
   display: flex;
   flex-wrap: wrap;
-  background-color: aliceblue;
+  background-color: #90CFB9;
   margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -35,7 +35,8 @@
   height: 40px;
   box-sizing: border-box;
   border: 2px solid;
-  border-color: #9c998d;
+  background-color: #23866F;
+  border-color: #90CFB9;
 
 }
 
@@ -54,4 +55,8 @@
 
 .four {
   color: #bb41d3
+}
+
+.five {
+  color: #e80f0f
 }
