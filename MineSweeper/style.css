@@ -9,16 +9,31 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #90CFB9;
-  margin-left: 50px;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-.grid div {
+.grid,
+.counter,
+#result,
+#flags-left {
   font-size: 25px;
   text-align: center;
 
 }
+
+.counter,
+#result,
+#flags-left {
+  color: #E7ECE0;
+  margin-top: 3vh;
+  font-weight: 600;
+}
+
+.description {
+  text-align: center;
+}
+
 
 .valid,
 .bomb {
@@ -26,7 +41,7 @@
   height: 40px;
   box-sizing: border-box;
   border: 5px solid;
-  border-color: #f5f4eb #bab7a9 #bab7a9 #fff9db;
+  border-color: #cfeae0 #7e8582 #7e8582 #aaecd5;
 
 }
 
@@ -36,27 +51,27 @@
   box-sizing: border-box;
   border: 2px solid;
   background-color: #23866F;
-  border-color: #90CFB9;
+  border-color: #b1fbe1;
 
 }
 
 .one {
-  color: #e76346;
+  color: #b82605;
 
 }
 
 .two {
-  color: #4199d3;
+  color: #045a94;
 }
 
 .three {
-  color: #57da59
+  color: #074208
 }
 
 .four {
-  color: #bb41d3
+  color: #6a087d
 }
 
 .five {
-  color: #e80f0f
+  color: #3b0505
 }
