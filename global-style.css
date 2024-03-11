@@ -40,6 +40,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 20px;
 }
 
 
@@ -57,6 +58,7 @@ body {
 .game-icon {
   font-size: 3em;
   margin: 0 0 0 0;
+  padding-top: 10px;
 }
 
 .game-name {
